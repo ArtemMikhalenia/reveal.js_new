@@ -73,6 +73,21 @@ section.has-light-background, section.has-light-background h1, section.has-light
   font-weight: inherit;
 }
 
+.react-icon{
+  width: 250px;
+  animation: rotate 10s linear 0s infinite;
+}
+
+@keyframes rotate {
+  0%{
+    transform: rotate(0deg);
+  }
+
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
 /*********************************************
  * HEADERS
  *********************************************/
