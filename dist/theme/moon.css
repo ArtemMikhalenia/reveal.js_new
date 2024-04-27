@@ -73,20 +73,7 @@ section.has-light-background, section.has-light-background h1, section.has-light
   font-weight: inherit;
 }
 
-.react-icon{
-  width: 250px;
-  animation: rotate 10s linear 0s infinite;
-}
 
-@keyframes rotate {
-  0%{
-    transform: rotate(0deg);
-  }
-
-  100%{
-    transform: rotate(360deg);
-  }
-}
 
 /*********************************************
  * HEADERS
@@ -374,4 +361,56 @@ section.has-light-background, section.has-light-background h1, section.has-light
   .backgrounds {
     background-color: var(--r-background-color);
   }
+}
+
+.react-icon{
+  width: 250px;
+  animation: rotate 10s linear 0s infinite;
+}
+
+@keyframes rotate {
+  0%{
+    transform: rotate(0deg);
+  }
+
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+p.react-title{
+  margin: 0px 0px 50px 0px;
+  font-size: 54px;
+  font-weight: 700;
+  color: #61dafb;
+}
+
+a.github-link{
+  color: #61dafb;
+}
+
+.author{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  font-size: 20px;
+}
+
+.author p{
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: white;
+}
+
+p.content-title{
+  font-size: 50px;
+  font-weight: 700;
+  color: var(--r-main-color);
+}
+
+ol.content-list{
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--r-main-color);
 }
