@@ -29,26 +29,125 @@
       </section>
       <section data-background-image="../../examples/assets/slide_2_background.jpg" data-background-size="cover"
         data-background-repeat="no-repeat">
-        <section data-transition="zoom">
+        <section class="content" data-transition="zoom">
           <p class="content-title">Content</p>
           <ol class="content-list">
             <li>About me</li>
             <li>What is REACT?</li>
-            <li>REACT Components</li>
-            <li>Components. Basic Concepts</li>
-            <li>Components. State Management</li>
-            <li>Components. Component Communication</li>
+            <li>What is REACT component?</li>
+            <li>Types of components</li>
+            <li>Function Component vs Class Component</li>
+            <li>Rendering components</li>
           </ol>
         </section>
-        <section data-transition="zoom">
-          <h2>Chapter 1</h2>
-          <p>About me</p>
+        <section class="about" data-transition="zoom">
+          <h2>About me</h2>
+          <div class="about-content">
+            <img class="about-photo" src="./examples/assets/about_photo.jpg" alt="about">
+            <p class="about-text">
+            <ul class="about-list">
+              <li>Young</li>
+              <li>Full of energy</li>
+              <li>Creative</li>
+              <li>Smart</li>
+              <li>Beautiful</li>
+              <li>Lazy</li>
+            </ul>
+            </p>
+          </div>
         </section>
-        <section data-transition="zoom">
-          <h2>Chapter 2</h2>
+        <section class="react-section" data-transition="zoom"
+          data-background-image="../../examples/assets/slide_4_background.jpg" data-background-size="cover"
+          data-background-repeat="no-repeat">
+          <h2>What is REACT?</h2>
+          <p>React is a JavaScript library for building user interfaces.</p>
+          <p>React is used to build single-page applications.</p>
+          <p>React allows us to create reusable UI components.</p>
         </section>
-        <section data-transition="zoom">
-          <h2>Chapter 3</h2>
+        <section class="benefits-section" data-transition="zoom"
+          data-background-image="../../examples/assets/slide_4_background.jpg" data-background-size="cover"
+          data-background-repeat="no-repeat">
+          <h2>Key benefits of REACT:</h2>
+          <ol>
+            <li>Component approach</li>
+            <li>Virtual DOM</li>
+            <li>Unidirectional data flow</li>
+            <li>Component Lifecycle</li>
+            <li>Hooks</li>
+          </ol>
+        </section>
+        <section class="component-section" data-transition="zoom"
+          data-background-image="../../examples/assets/slide_5_background.jpg" data-background-size="cover"
+          data-background-repeat="no-repeat">
+          <h2>What is REACT component?</h2>
+          <p>React Components are the reusable code blocks containing logics and UI elements. They return HTML.</p>
+          <pre><code data-trim data-noescape><script type="text/template">
+            function Welcome(props) {
+              return <h1> Hello, {props.name} </h1>;
+            }
+          </script></code></pre>
+          <img src="./examples/assets/components.png" alt="components">
+        </section>
+        <section class="types-section" data-transition="zoom"
+          data-background-image="../../examples/assets/slide_5_background.jpg" data-background-size="cover"
+          data-background-repeat="no-repeat">
+          <h2>Types of components</h2>
+          <ol>
+            <li>Function components</li>
+            <li>Class components</li>
+          </ol>
+        </section>
+        <section class="function-section" data-transition="zoom"
+          data-background-image="../../examples/assets/slide_5_background.jpg" data-background-size="cover"
+          data-background-repeat="no-repeat">
+          <h2>Function component</h2>
+          <pre><code data-trim data-noescape><script type="text/template">
+            function Welcome(props) {
+              return <h1>Hello, {props.name}</h1>;
+            }
+          </script></code></pre>
+        </section>
+        <section class="class-section" data-transition="zoom"
+          data-background-image="../../examples/assets/slide_5_background.jpg" data-background-size="cover"
+          data-background-repeat="no-repeat">
+          <h2>Class component</h2>
+          <pre><code data-trim data-noescape><script type="text/template">
+            class Welcome extends React.Component {
+              render() {
+                return <h1>Hello, {this.props.name}</h1>;
+              }
+            }
+          </script></code></pre>
+        </section>
+        <section class="vs-section" data-transition="zoom"
+          data-background-image="../../examples/assets/slide_9_background.jpg" data-background-size="cover"
+          data-background-repeat="no-repeat">
+          <h2>Function Component vs Class Component</h2>
+          <div class="vs-lists">
+            <div class="func-comp">
+              <p>Function component</p>
+              <ol>
+                <li>Simplified syntax</li>
+                <li>Lightweight</li>
+                <li>Stateless</li>
+                <li>Easy to read and write</li>
+              </ol>
+            </div>
+            <div class="class-comp">
+              <p>Class component</p>
+              <ol>
+                <li>Traditional syntax</li>
+                <li>More features</li>
+                <li>Stateful</li>
+                <li>Legacy support</li>
+              </ol>
+            </div>
+          </div>
+        </section>
+        <section class="render-section" data-transition="zoom"
+          data-background-image="../../examples/assets/slide_9_background.jpg" data-background-size="cover"
+          data-background-repeat="no-repeat">
+          <h2>Render components</h2>
         </section>
       </section>
     </div>
