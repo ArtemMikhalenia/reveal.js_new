@@ -145,9 +145,61 @@
           </div>
         </section>
         <section class="render-section" data-transition="zoom"
-          data-background-image="../../examples/assets/slide_9_background.jpg" data-background-size="cover"
+          data-background-image="../../examples/assets/slide_11_background.jpg" data-background-size="cover"
           data-background-repeat="no-repeat">
           <h2>Render components</h2>
+          <p>In React, components can be rendered in several ways, depending on how you want to use them in your
+            application.</p>
+          <ol>
+            <li>ReactDOM.render()</li>
+            <li>Rendering of nested components</li>
+            <li>Rendering using conditions and loops</li>
+          </ol>
+        </section>
+        <section class="render-section" data-transition="zoom"
+          data-background-image="../../examples/assets/slide_11_background.jpg" data-background-size="cover"
+          data-background-repeat="no-repeat">
+          <h2>ReactDOM.render():</h2>
+          <pre><code data-trim data-noescape><script type="text/template">
+            ReactDOM.render(<App />, document.getElementById('root'));
+            </script></code></pre>
+        </section>
+        <section class="render-section" data-transition="zoom"
+          data-background-image="../../examples/assets/slide_11_background.jpg" data-background-size="cover"
+          data-background-repeat="no-repeat">
+          <h2>Rendering of nested components:</h2>
+          <pre><code data-trim data-noescape><script type="text/template">
+            function App() {
+              return (
+                <div>
+                  <Header />
+                  <p>Content goes here</p>
+                  <Footer />
+                </div>
+              );
+            }
+            </script></code></pre>
+        </section>
+        <section class="render-section" data-transition="zoom"
+          data-background-image="../../examples/assets/slide_11_background.jpg" data-background-size="cover"
+          data-background-repeat="no-repeat">
+          <h2>Rendering using conditions and loops:</h2>
+          <pre><code data-trim data-noescape><script type="text/template">
+            function App() {
+              const isLoggedIn = true;
+            
+              return (
+                <div>
+                  {isLoggedIn ? <UserGreeting /> : <GuestGreeting />}
+                </div>
+              );
+            }
+            </script></code></pre>
+        </section>
+        <section class="final-section" data-transition="zoom"
+          data-background-image="../../examples/assets/slide_11_background.jpg" data-background-size="cover"
+          data-background-repeat="no-repeat">
+          <h2>Thank you for your attention! May the force be with you!</h2>
         </section>
       </section>
     </div>

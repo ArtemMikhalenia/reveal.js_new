@@ -468,17 +468,23 @@ section.benefits-section ol{
 
 section.component-section h2,
 section.types-section h2,
-section.vs-section h2{
+section.vs-section h2,
+section.render-section h2{
   text-shadow: 3px 3px rgb(25, 25, 25);
   color: #ffffff;
 }
 
-section.component-section p{
+section.component-section p,
+section.render-section p{
   margin: 0px 0px 10px 0px;
   font-size: 25px;
   text-align: left;
   text-shadow: 2px 2px rgb(25, 25, 25);
   color: #ffffff;
+}
+
+section.render-section p{
+  margin: 0px 0px 30px 0px;
 }
 
 section.component-section img{
@@ -492,7 +498,8 @@ section.component-section pre{
   margin: 0 0 10px 0;
 }
 
-section.types-section li{
+section.types-section li,
+section.render-section li{
   margin: 0px 0px 0px 0px;
   font-size: 35px;
   text-align: left;
@@ -506,4 +513,9 @@ section.types-section li{
   justify-content: space-between;
   text-shadow: 3px 3px rgb(25, 25, 25);
   color: #ffffff;
+}
+
+section.final-section h2{
+  text-shadow: 3px 3px rgb(25, 25, 25);
+  color: #edf94f;
 }
